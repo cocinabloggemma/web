@@ -5,10 +5,20 @@ if [ "$@" == "" ]; then
 	exit 1
 fi
 
-. auth.cfg
+
+if [ -f auth.cfg ]; then
+	. auth.cfg
+	REPO="https://$USER:$PASS@github.com/cocinabloggemma/web.git"
+else
+	REPO="https://github.com/cocinabloggemma/web.git"
+fi
+
+
+
+MESSAGE="$@"
 
 git add *
-git commit -m "$@"
+git commit -m "$MESSAGE"
 # git remote add origin https://github.com/cocinabloggemma/web.git
-git push "https://$USER:$PASS@github.com/cocinabloggemma/web.git" --all
+git push "$REPO" --all
 
