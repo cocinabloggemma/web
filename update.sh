@@ -29,5 +29,5 @@ fi
 git add *
 git commit -m "$MESSAGE"
 # git remote add origin https://github.com/cocinabloggemma/web.git
-git push "$REPO" --all
+git push "$REPO_URL" --all
 
