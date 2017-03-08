@@ -1,6 +1,8 @@
 #!/bin/bash
 
-if [ "$@" == "" ]; then
+MESSAGE="$@"
+
+if [ "$MESSAGE" == "" ]; then
 	echo "Debes pasar como parametros los comentarios de la subida"
 	exit 1
 fi
@@ -14,8 +16,6 @@ else
 fi
 
 
-
-MESSAGE="$@"
 
 git add *
 git commit -m "$MESSAGE"
