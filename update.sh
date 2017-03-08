@@ -14,7 +14,7 @@ fi
 REPO_URL="https://$REPO"
 if [ -f auth.cfg ]; then
 	. auth.cfg
-	if [ "$USER" !="" ]; then
+	if [ "$USER" != "" ]; then
 		if [ "$PASS" != "" ]; then
 			REPO_URL="https://$USER:$PASS@$REPO"
 		else
