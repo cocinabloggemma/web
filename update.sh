@@ -26,8 +26,8 @@ fi
 
 
 
-git add -u
-git add *
+git add -u 2>/dev/null
+git add *  2>/dev/null
 git commit -m "$MESSAGE"
 git push "$REPO_URL" --all
 
