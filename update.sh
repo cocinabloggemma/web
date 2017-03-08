@@ -10,5 +10,5 @@ fi
 git add *
 git commit -m "$@"
 # git remote add origin https://github.com/cocinabloggemma/web.git
-git push "https://$USER:$PASS@github.com/cocinabloggemma/web.git' --all
+git push "https://$USER:$PASS@github.com/cocinabloggemma/web.git" --all
 
