@@ -13,5 +13,5 @@ fi
 git add -u 2>/dev/null
 git add *  2>/dev/null
 git commit -m "$MESSAGE"
-git push "http://192.168.0.100:9999/projects/laboratorio.git" --all
+git push "ssh://root@192.168.0.100/server/git/laboratorio.git" --all
 
